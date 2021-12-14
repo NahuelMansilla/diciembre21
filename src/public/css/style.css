@@ -1,0 +1,431 @@
+body{
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1{
+    font-family: 'IBM Plex Mono', monospace;
+    color: azure;
+    text-align: center;
+    font-size: 50px;
+}
+
+.frase{
+    font-family: 'Italianno', cursive;
+    text-align: center;
+    font-size: 30px;
+}
+
+.ss{
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-around;
+    
+}
+
+.buscador{
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.buscar{
+    background-color:orange;
+    color: black;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.sesion{
+    font-size: 20px;
+}
+
+.registro, .iniciar{
+    background-color:orange;
+    color: black;
+    font-size: 25px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a:hover{
+   text-decoration: none;
+    
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+nav{
+    text-align: center;
+    font-size: 30px;
+    padding: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.index, .contacto{
+    background-color: orange;
+    border-radius: 5px;
+    color: black;
+}
+
+h2{
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.catalogo{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 500px;
+    grid-gap: 5px;
+    gap: 50px;
+    border: 50px transparent;
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+    text-align: center;
+}
+
+.cuadro{
+    border: 50px transparent;
+    border-radius: 20px;
+    background: rgba(221, 217, 214, 0.5);
+    border-style: solid;
+    width: 330px;
+    margin-bottom: 400px;
+    box-sizing: border-box;
+    height: 460px;
+    border-width: 1px;
+    border-color: black;
+    border-image: initial;
+    display: block;
+}
+
+.comprar{
+    text-transform: uppercase;
+    border: 50px transparent;
+    border-radius: 20px;
+    background: rgba(131, 134, 128, 0.5);
+    font-weight: bold;
+    color: rgb(10, 1, 1);
+    background-color: orange;
+    margin: 10px;
+    font-size: 20px;
+    
+}
+.autor{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    background: none;
+    margin: auto;
+}
+.libro{
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    background-image: none;
+}
+img{
+    margin: auto;
+    margin-top: 10px;
+    height: 300px;
+    width: 200px;
+    display: flex;
+}
+
+h3{
+    font-size: 20px;
+    text-align: center;
+}
+
+.formas{
+    text-align: center;
+    font-size: 40px;
+}
+
+.pago{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 100px;
+    gap: 750px;
+}
+
+.newsletter{
+    text-align: center;
+    font-size: 40px;
+}
+
+.email{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 50px transparent;
+    border-radius: 20px;
+    background: rgba(223, 226, 228, 0.5);
+    gap: 20px;
+}
+
+.suscripcion{
+    background-color:orange;
+    color: black;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.input{
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px){
+    
+    .catalogo {
+        display: grid;
+        grid-template-columns: 50%;
+        column-gap: 2rem;
+    }
+    .pago{
+        display: flex;
+        gap: 45px; 
+    }
+    .email{
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border: 50px transparent;
+        border-radius: 20px;
+        background: rgba(223, 226, 228, 0.5);
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 1280px){
+    
+    .catalogo{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 500px;
+        grid-gap: 5px;
+        gap: 50px;
+        border: 50px transparent;
+        border-radius: 20px;
+        padding: 30px;
+        position: relative;
+        text-align: center;
+    }
+    .pago{
+        display: grid;
+        grid-template-columns: repeat(3);
+        grid-auto-rows: 100px;
+        grid-gap: 400px;
+    }    
+    .email{
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border: 50px transparent;
+        border-radius: 20px;
+        background: rgba(223, 226, 228, 0.5);
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 375px){
+    
+    h1{
+        font-family: 'IBM Plex Mono', monospace;
+        color: azure;
+        text-align: center;
+        font-size: 50px;
+        
+    }
+    
+    .frase{
+        font-family: 'Italianno', cursive;
+        text-align: center;
+        font-size: 30px;
+        padding-left: 10px;
+    }
+    
+    .ss{
+        display: grid;
+        grid-gap: 100px;
+        
+    }
+    
+    .buscador{
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    
+    .buscar{
+        background-color:orange;
+        color: black;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    
+    .sesion{
+        font-size: 20px;
+    }
+    
+    .registro, .iniciar{
+        background-color:orange;
+        color: black;
+        font-size: 25px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    a:hover{
+       text-decoration: none;
+        
+    }
+    
+    a:link, a:visited, a:active {
+        text-decoration:none;
+    }
+    
+    nav{
+        text-align: center;
+        font-size: 30px;
+        padding: 40px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    .index, .contacto{
+        background-color: orange;
+        border-radius: 5px;
+        color: black;
+    }
+    
+    h2{
+        text-align: center;
+        font-size: 35px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    .catalogo{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 500px;
+        grid-gap: 5px;
+        gap: 50px;
+        border: 50px transparent;
+        border-radius: 20px;
+        padding: 30px;
+        position: relative;
+        text-align: center;
+    }
+    
+    .cuadro{
+        border: 50px transparent;
+        border-radius: 20px;
+        background: rgba(221, 217, 214, 0.5);
+        border-style: solid;
+        width: 330px;
+        margin-bottom: 400px;
+        box-sizing: border-box;
+        height: 460px;
+        border-width: 1px;
+        border-color: black;
+        border-image: initial;
+        display: block;
+    }
+    
+    .comprar{
+        text-transform: uppercase;
+        border: 50px transparent;
+        border-radius: 20px;
+        background: rgba(131, 134, 128, 0.5);
+        font-weight: bold;
+        color: rgb(10, 1, 1);
+        background-color: orange;
+        margin: 10px;
+        font-size: 20px;
+        
+    }
+    .autor{
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        background: none;
+        margin: auto;
+    }
+    .libro{
+        font-weight: bold;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        background-image: none;
+    }
+    img{
+        margin: auto;
+        margin-top: 10px;
+        height: 300px;
+        width: 200px;
+        display: flex;
+    }
+    
+    h3{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .formas{
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    .pago{
+        display: grid;
+        grid-template-columns: repeat(1);
+        grid-auto-rows: 100px;
+        grid-gap: 10px;
+    }
+    
+    .newsletter{
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    .email{
+        font-size: 15px;
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        border: 50px transparent;
+        border-radius: 20px;
+        background: rgba(223, 226, 228, 0.5);
+        gap: 20px;
+    }
+    
+    .suscripcion{
+        background-color:orange;
+        color: black;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    
+    .input{
+        font-size: 20px;
+        border-radius: 5px;
+    }
+
+}
